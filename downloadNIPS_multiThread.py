@@ -27,7 +27,7 @@ class NIPSPapersDowonloader(object):
 
     def __init_work_queue(self):
         urlPrefix = 'http://papers.nips.cc/book/advances-in-neural-information-processing-systems'
-        for i in range(26):
+        for i in range(27):
             nipsURL = urlPrefix +'-'+ str(i+1) +'-'+ str(1988+i)
             yearStr = 'NIPS' + str(1988+i)
             try:
@@ -104,15 +104,3 @@ if __name__ == '__main__':
     work_manager.wait_allcomplete()
     end = time.time()
     print "cost all time: %s" % (end-start)
-    
-
-
-
-
-
-        
-    
-    
-    
-    
-    
